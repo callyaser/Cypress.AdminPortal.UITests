@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["es5", "dom","scripthost"],
+        "noEmit": true,
+        // be explicit about types included
+        // to avoid clashing with Jest types
+        "types": [ "cypress","cypress-xpath","node"]
+    },
+    "include": [
+        "../node_modules/cypress",
+        "./**/*.ts"
+    ]
+}
+ 
